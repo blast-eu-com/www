@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+	<!-- start some link here -->
+	<link rel="icon" href="/img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-4.5.2-dist/css/bootstrap.min.css" />
+	<!-- start some script here -->
+	<script src="/static/js/jquery-1.12.4/jquery-1.12.4.min.js"></script>
+	<script src="/static/js/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container p-0 m-0 min-vh-100 min-vw-100">
+		<nav class="navbar navabar-expand-lg navbar-dark fixed-top min-vw-100" style="background-color: #4B8BBE">
+			<div class="container">
+				<a class="navbar-brand" href="/about.html">About</a>
+				<a class="navbar-brand" href="/contact.html">Contact</a>
+				<a class="navbar-brand" href="/document.html">Documentation</a>
+				<a class="navbar-brand" href="/download.html">Download</a>
+			</div>
+		</nav>
+		<div style="width: 100%; margin-top: 56px;">
+			<div class="row min-vh-100">
+				<div class="col-9">
+					<iframe name="document_page" width="100" height="100" style="border: none;"></iframe>
+				</div>
+				<div class="col-3" style="border-left: solid thin #fcfcfc">
+					<div class="accordion mt-3" id="documentMenu">
+
+						<!-- DOC INSTALL -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="installMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#installSubMenu" aria-expande="true" aria-controls="collapseOne">Install</button>
+								</h2>
+							</div>
+						</div>
+						<div id="installSubMenu" class="collapse" style="width: 420px; border: 1px solid rgba(0,0,0,.125);" aria-labelledby="installMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0"><a href="#" target="document_page">installA</a></li>
+									<li class="list-group-item border-0"><a href="#" target="document_page">installB</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- DOC REALM -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="realmMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#realmSubMenu" aria-expande="true" aria-controls="collapseOne">Realm</button>
+								</h2>
+							</div>
+						</div>
+						<div id="realmSubMenu" class="collapse" style="width: 420px; border: 1px solid rgba(0,0,0,.125);" aria-labelledby="realmMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0">realmA</li>
+									<li class="list-group-item border-0">realmB</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- DOC INFRASTRUCTURE -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="infrastructureMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#infrastructureSubMenu" aria-expande="true" aria-controls="collapseOne">Infrastructure</button>
+								</h2>
+							</div>
+						</div>
+						<div id="infrastructureSubMenu" class="collapse" style="width: 420px; border-bottom: 1px solid rgba(0,0,0,.125);" aria-labelledby="infrastructureMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0">infrastructureA</li>
+									<li class="list-group-item border-0">infrastructureB</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- DOC CLUSTER -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="clusterMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#clusterSubMenu" aria-expande="true" aria-controls="collapseOne">Cluster</button>
+								</h2>
+							</div>
+						</div>
+						<div id="clusterSubMenu" class="collapse" style="width: 420px; border: 1px solid rgba(0,0,0,.125);" aria-labelledby="clusterMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0">clusterA</li>
+									<li class="list-group-item border-0">clusterB</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- DOC NODE -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="nodeMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#nodeSubMenu" aria-expande="true" aria-controls="collapseOne">Node</button>
+								</h2>
+							</div>
+						</div>
+						<div id="nodeSubMenu" class="collapse" style="width: 420px; border: 1px solid rgba(0,0,0,.125);" aria-labelledby="nodeMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0">nodeA</li>
+									<li class="list-group-item border-0">nodeB</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- DOC MANAGEMENT -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="managementMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#managementSubMenu" aria-expande="true" aria-controls="collapseOne">Management</button>
+								</h2>
+							</div>
+						</div>
+						<div id="managementSubMenu" class="collapse" style="width: 420px; border: 1px solid rgba(0,0,0,.125);" aria-labelledby="managementMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0">managementA</li>
+									<li class="list-group-item border-0">managementB</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- DOC SCHEDULER -->
+						<div class="card" style="width: 420px;">
+							<div class="card-header bg-transparent" id="schedulerMenu">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#schedulerSubMenu" aria-expande="true" aria-controls="collapseOne">Scheduler</button>
+								</h2>
+							</div>
+						</div>
+						<div id="schedulerSubMenu" class="collapse" style="width: 420px; border: 1px solid rgba(0,0,0,.125);" aria-labelledby="schedulerMenu" data-parent="#documentMenu">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item border-0">schedulerA</li>
+									<li class="list-group-item border-0">schedulerB</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
