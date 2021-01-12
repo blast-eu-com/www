@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body style="background-color: #C0C0C0">
+
+	<div height="100%" width="100%" style="text-align: center; margin-top: 20%">
+		<p style="font-family: Verdana, sans-Serif">
+			<h2>BLAST.EU.COM</h2>
+			<h5>UNDER CONSTRUCTION</h5>
+			<span id="binary"></span>
+		</p>
+		<script>
+			setInterval(function() {
+				let secs = Date.now()
+				let bin  = secs.toString(2)
+				let el   = document.getElementById("binary")
+				el.innerHTML = bin
+			}, 1000)
+		</script>
+	</div>
+
+
+</body>
