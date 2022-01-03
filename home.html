@@ -1,11 +1,83 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="/css/common.css" type="text/css">
+	<link rel="stylesheet" href="/css/home.css" type="text/css">
 </head>
 
-<body>
-	@home
+<body onload="parent.alertsize(document.body.scrollHeight);">
+	
+	<div id="home-main-container" class="mainContainer">
+		<div id="home-menu-container" class="menuContainer">
+			<ul class="menuListContainer">
+				<li>
+					<a class="menuListImage" href="/home.html"><img src="/pictures/blast.jpg" height="56px" width="56px"/></a>
+				</li>
+				<li class="menuList">
+					<a class="menuListElement" href="/contact.html">Contact</a>
+				</li>
+				<li class="menuList">
+					<a class="menuListElement" href="/documentation.html">Documentation</a>
+				</li>
+				<li class="menuList">
+					<a class="menuListElement" href="/product.html">Product</a>
+				</li>
+			</ul>
+		</div>
+		<!-- <iframe id="index-display-container" src="/home.html" width="100%" style="border: none" scrolling="no"></iframe> -->
+		<div class="mainContent">
+			<ul class="mainAdviseContainer">
+				<li class="mainAdviseList">
+					<span class="adviseCardTitle">OUR SOURCE ON GITHUB</span>
+					<p class="adviseCardContent">Access the BLAST on github at this url: <b>https://github.com/blast-eu-com/blast.eu.com</b></p>
+				</li>
+				<li class="mainAdviseList">
+					<span class="adviseCardTitle">BLAST FREE TRIAL</span>
+					<p class="adviseCardContent">You want to test BLAST, get a free ride on BLAST at this url: <b>https://sandbox.blast.eu.com</b></p>
+				</li>
+			</ul>
+			<p class="mainText">
+			Blast is an Open Source agentless software scheduling and executing jobs scenarios for all types of cloud solutions. It allows you to manage and administer your scheduled jobs via a friendly frontend connected to a backend itself connected to Elasticsearch. Blast UI offers to the operators the capability to execute recurrent/one-shot jobs on one/serveral nodes sequencially/simultaneously. additionally you can browse through your scripts, playbooks and execution results.
+			</p>
+			<div id="collaborative-zone" class="messageZone">
+				<div style="width: 50%">
+					<img src="/pictures/collaborative.jpg" height="auto" width="512px" />
+				</div>
+				<div class="messageContent">
+					<span class="messageHeader">Blast automation platform improves engineers collaborating.</span>
+					<p>Blast comes with the possibility to share your community work with others. This capability increases the collaboration between communities and speed up the delivery by reducing the workload.</p>
+				</div>
+			</div>
+			<div id="four-cards-zone" class="cardZone">
+				<div class="cardContent" style="margin-left: 0">
+					<span class="cardHeader">Automation Platform</span>
+					<hr noshade color="#C0C0C0" size="1px">
+					<p>Define quickly complex infrastructure to speed up productivity with the automation platform accross teams and enterprises.</p>
+				</div>
+				<div class="cardContent">
+					<span class="cardHeader">Access control</span>
+					<hr noshade color="#C0C0C0" size="1px">
+					<p>Control and manage automation platform objects through flexible realm.</p>
+				</div>
+				<div class="cardContent">
+					<span class="cardHeader">Community based</span>
+					<hr noshade color="#C0C0C0" size="1px">
+					<p>Build communities across enterprises or teams and improve the productivity sharing platform objects across realms.</p>
+				</div>
+				<div class="cardContent">
+					<span class="cardHeader">Run jobs</span>
+					<hr noshade color="#C0C0C0" size="1px">
+					<p>Run schedules or on-demand jobs on multiple node type across your IT department to improve the efficiency and quality of your end to end journey.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footerContent">
+			<div>
+			
+			</div>
+		</div>
+	</div>
 </body>
 </html>

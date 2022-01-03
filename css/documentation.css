@@ -1,0 +1,52 @@
+/* CSS Document */
+
+.documentationMenuContainer {
+	border-left: thin solid #C0C0C0;
+	padding: 1%;
+	position: fixed;
+    top: 55px;
+    left: 80%;
+    height: 100%;
+	width: 100%;
+	background-color: whitesmoke;
+}
+
+.documentationMenuList {
+	list-style-type: none;
+}
+
+.documentationMenuChapter {
+	list-style-type: none;
+	padding: 5px;
+}
+
+li.documentationMenuChapter::before {
+	content: "\25AA";
+	color: #0095D3;
+	display: inline-flex;
+    padding-right: 10px;
+}
+
+.documentationMenuChapter:hover {
+	cursor: pointer;
+}
+
+.documentationChapterMainContainer {
+	margin-top: 60px;
+	padding-left: 15%;
+	padding-right: 5%;
+}
+
+.documentationChapterTitle {
+	margin-top: 5%;
+	/* color: #0095D3; */
+}
+
+.mainTitle {
+	color: #0095D3;
+	margin-top: 0;
+}
+
+.documentImage {
+	box-shadow: 1px 1px 5px #c0c0c0;
+}

@@ -1,10 +1,62 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<meta charset="utf-8">
+	<title>The BLAST Guide chapter Node</title>
+	<link rel="stylesheet" href="/css/common.css" type="text/css">
+	<link rel="stylesheet" href="/css/documentation.css" type="text/css">
 </head>
 
-<body>
+<body onload="parent.alertsize(document.body.scrollHeight);">
+	<div class="mainContainer documentationChapterMainContainer">
+		
+		<h1 class="documentationChapterTitle mainTitle">NODE</h1>
+		<img src="/pictures/documentation/node/node_button.PNG">
+		<p>The node is a Blast object member of the cluster sublayer, the node can have one more uplinks to cluster objects.</p>
+	
+		<h3 class="documentationChapterTitle">Node form</h3>
+		<img class="documentImage" src="/pictures/documentation/node/node_form.PNG" height="192px" width="auto">
+		<p>A new node can be created by filling the node form. Every newly created node will be part of the current realm.
+		<ul>
+			<li><b>node hostname</b> is a mandatory field, it is the hostname of the node or any alias.</li>
+			<li><b>node ip</b> is a mandatory field, it is the ip of the node.</li>
+			<li><b>node description</b> is an optional fields, it describes the nodes.</li>
+			<li><b>scan by node ip</b> it describes what parameter BLAST will use to access the node. If selected then BLAST will use the node ip else BLAST will use the node hostname.</li>
+		</ul>
+		</p>
+	
+		<h3 class="documentationChapterTitle">Node list</h3>
+		<img class="documentImage" src="/pictures/documentation/node/node_list.PNG" height="128px" width="auto">
+		<p>All nodes are visibile as card in the list section. Click on the node card to access to the node details section.</p>
+		
+		<h3 class="documentationChapterTitle">Node details</h3>
+		<img class="documentImage" src="/pictures/documentation/node/node_details.PNG" height="192px" width="auto">
+		<p>Click on the node card of your choice to access his details. The node details contains three sections:
+		<ul>
+			<li><b>node details</b> shows the id, hostname, ip, description, mode, realms.</li>
+			<li><b>node mode</b> allows you to manage the cluster nodes.</li>
+			<li><b>node peers</b> lists the nodes linked.</li>
+		</ul>The picture above is an exemple of a cluster details section.</p>	
+	
+	
+		<h3 class="documentationChapterTitle">Delete a node</h3>
+		<p></p>
+	
+		<h3 class="documentationChapterTitle">Rescan a node</h3>
+		<p></p>
+		
+		<h3 class="documentationChapterTitle">node mode</h3>
+		<p></p>
+	
+		<h3 class="documentationChapterTitle">node peers</h3>
+		<p></p>
+	
+		<h3 class="documentationChapterTitle">Node management</h3>
+		<img class="documentImage" src="/pictures/documentation/cluster/cluster_node_management.PNG" height="72px" width="auto">
+		<p></p>
+
+	
+	
+	</div>
 </body>
 </html>

@@ -1,0 +1,97 @@
+/* CSS Document */
+
+@font-face { 
+	font-family: Inter;
+	src: url("/fonts/Inter/static/Inter-Regular.ttf")
+}
+
+@font-face {
+	font-family: QuickSand;
+	src: url("/fonts/QuickSand/static/Quicksand-Regular.ttf")
+}
+
+a {
+	text-decoration: none;
+	color: #232323; 
+}
+
+body {
+	background-color: #fff;
+	font-family: QuickSand, sans-serif;
+ 	margin: 0;
+	color: #232323;
+}
+
+li {
+	list-style-type: none;
+}
+
+.mainContainer { 
+/* main window container
+ * common to all page define the main container
+ */
+	height: 100%;
+}
+
+/* all CSS linked to menu site */
+.menuContainer {
+	position:fixed;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #000;
+	width: 100%;
+	height: 55px;
+	z-index: 1000;
+	border-bottom: 3px solid #0095D3;
+}
+
+.menuListContainer {
+	list-style: none;
+	display: inline-flex;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 15%;
+}
+
+.menuList {
+	margin: 0;
+	margin-top: 15px;
+}
+
+.menuListElement {
+	padding: 20px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #C0C0C0;
+	font-weight: bold;
+}
+
+.menuListElement:hover {
+	cursor: pointer;
+	background-color: #333;
+	color: #fff;
+}
+
+.menuListImage {
+	margin-left: 15px;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #C0C0C0;
+}
+
+.mainContent {
+	width: 100%;
+	display: block; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 60px;
+}
+
+.footerContent {
+	
+}
