@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The BLAST Guide chapter Realm</title>
+	<link rel="stylesheet" href="/css/common.css" type="text/css">
+	<link rel="stylesheet" href="/css/documentation.css" type="text/css">
+</head>
+
+<body onload="parent.alertsize(document.body.scrollHeight);">
+	<div class="mainContainer documentationChapterMainContainer">
+		
+		<h1 class="documentationChapterTitle mainTitle">REALM</h1>
+		<img src="/pictures/documentation/realm/realm_button.PNG">
+		<p>The realm is a Blast object used to control the user permissions of all others Blast object. Every Blast objects are assigned to the active user realm at the object creation time. Once an object is created, it can be shared to several realms.<br><br>A realm has an unlimited number of members. By default any member has a regular role expect the creator of the realm and his delegates. The owner role is assigned to the creator of the realm at the creation time, then the creator can elect up to three delegates. The content of a realm can be accessible by any of his members only. 
+		<ul>
+			<li class="documentationList"><b>regular</b> has read/write/execute access.</li>
+			<li class="documentationList"><b>delegate</b> same as regular role and can approve new member request.</li>
+			<li class="documentationList"><b>owner</b> same as delegate role and can grant/revoke delegate role or owner role to anyone.</li>
+		</ul>
+		If a user wants to become a new member then a request must be sent, the owner or one of his delegates must acknowledge the request before this new member can start interacting with the content of the realm. As all realm's objects are linked to the realm then a member can leave a realm at any moment. If the owner decides to leave a realm, he must before elect a new owner, either he can grant one of his delegates or anyone of the regular members.
+		</p>
+	
+		<h3 class="documentationChapterTitle">Realm form</h3>
+		<img class="documentImage" src="/pictures/documentation/realm/realm_form.PNG" height="128px" width="auto">
+		<p>A new cluster can be created by filling the cluster form. Every newly created cluster will be part of the current realm.
+		<ul>
+			<li class="documentationList"><b>cluster name</b> is a mandatory field, it names the realm object.</li>
+			<li class="documentationList"><b>cluster description</b> is an optional field, it describes the realm object shortly.</li>
+		</ul>
+		</p>
+	
+		<h3 class="documentationChapterTitle">Realm list</h3>
+		<img class="documentImage" src="/pictures/documentation/realm/realm_list.PNG" height="156px" width="auto">
+		<p>All clusters of the current realm are visibile as card in the list section. Click on the cluster card to access to the cluster details section.</p>
+		
+		<h3 class="documentationChapterTitle">Realm details</h3>
+		<img class="documentImage" src="/pictures/documentation/cluster/cluster_details.PNG" height="192px" width="auto">
+		<p>Click on the cluster card of your choice to open the cluster details. The cluster details contains three sections:
+		<ul>
+			<li class="documentationList"><b>cluster details</b> shows the id, name, description, realms.</li>
+			<li class="documentationList"><b>cluster nodes management</b> allows you to manage the cluster nodes.</li>
+			<li class="documentationList"><b>cluster nodes list</b> lists the nodes linked.</li>
+		</ul>The picture above is an exemple of a cluster details section.</p>
+		
+		
+		<h3 class="documentationChapterTitle">Delete a cluster</h3>
+		<p></p>
+		
+		<h3 class="documentationChapterTitle">Cluster nodes management</h3>
+		<img class="documentImage" src="/pictures/documentation/cluster/cluster_node_management.PNG" height="72px" width="auto">
+		<p></p>
+
+		
+		
+	</div>
+</body>
+</html>

@@ -1,10 +1,52 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<meta charset="utf-8">
+	<title>The BLAST Guide chapter Scenario</title>
+	<link rel="stylesheet" href="/css/common.css" type="text/css">
+	<link rel="stylesheet" href="/css/documentation.css" type="text/css">
 </head>
 
-<body>
+<body onload="parent.alertsize(document.body.scrollHeight);">
+	<div class="mainContainer documentationChapterMainContainer">
+		
+		<h1 class="documentationChapterTitle mainTitle">SCENARIO</h1>
+		<img src="/pictures/documentation/scenario/scenario_button.PNG">
+		<p>The scenario is a Blast object. It is defined by a group of Blast objects, the scripts must be executed on the nodes in sequence or in parallel as configured by the user either for the on-demand execution or by the scenario saved.
+		</p>
+	
+		<h3 class="documentationChapterTitle">Scenario form</h3>
+		<img class="documentImage" src="/pictures/documentation/scenario/scenario_form.PNG" height="332px" width="auto">
+		<p>A new scenario can be created by filling the scenario form. Every newly created scenario will be part of the current realm.
+		<ul>
+			<li class="documentationList"><b>scenario name</b> is a mandatory field, it names the scenario object.</li>
+			<li class="documentationList"><b>scenario description</b> is an optional field, it describes the scenario object shortly.</li>
+			<li class="documentationList"><b>parallel mode</b> is an optional field, the default value.</li>
+			<li class="documentationList"><b>max parallel threads</b> is an optional field, the default value.</li>
+			<li class="documentationList"><b>scripts</b> is mandatory selection, they are the scripts to be execute among the infrastructure.</li>
+			<li class="documentationList"><b>infrastructure element</b> is mandatory selection, they are the running script's target nodes.</li>
+		</ul>
+		</p>
+	
+		<h3 class="documentationChapterTitle">Scenario script</h3>
+		<img class="documentImage" src="/pictures/documentation/scenario/scenario_script.PNG" height="192px" width="auto">
+		<p>The scripts selector is part of the scenario form, it allows to filter scripts by script name and script language. One or more scripts can be selected as scenario component.</p>
+		
+		<h3 class="documentationChapterTitle">Scenario infrastructure tree</h3>
+		<img class="documentImage" src="/pictures/documentation/scenario/scenario_infrastructure_tree.PNG" height="332px" width="auto">
+		<p>The infrastructure selector is part of the scenario form, it offers flexible infrastructure visualization and quick select of any infrastructure, cluster and node. One or more infrastructure component can be selected as scenario component.</p>
+	
+		<h3 class="documentationChapterTitle">Save or Run a scenario</h3>
+		<img class="documentImage" src="/pictures/documentation/scenario/scenario_run_save.PNG" height="152px" width="auto">
+		<p>
+			<ul>
+				<li class="documentationList" style="list-style-type: none; font-weight: bold">Save a scenario</li>
+				<li class="documentationList" style="list-style-type: none;"><p>A scenario can be saved to be reused several time through one or many scheduler. In order to save a scenario, the scenario form must be filled, once all parameters are reflecting the desired scenario configuration then click on the save button.</p></li>
+				<li class="documentationList" style="list-style-type: none; font-weight: bold">Run a scenario</li>
+				<li class="documentationList" style="list-style-type: none;"><p>An unsaved scenario can be run on-demand, the on-demand run allow one execution of a desired scenario defined in the scenario form. This scenario will not be available to define a scheduler. The run of a scenario is useful when no recurrent run is expected. In order to run a scenario, the scenario form must be filled, once all parameters are reflecting the desired configuration then click on the run button.</p></li>
+			</ul>
+		</p>
+		
+	</div>
 </body>
 </html>

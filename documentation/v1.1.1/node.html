@@ -15,48 +15,52 @@
 		<p>The node is a Blast object member of the cluster sublayer, the node can have one more uplinks to cluster objects.</p>
 	
 		<h3 class="documentationChapterTitle">Node form</h3>
-		<img class="documentImage" src="/pictures/documentation/node/node_form.PNG" height="192px" width="auto">
+		<img class="documentImage" src="/pictures/documentation/node/node_form.PNG" height="256px" width="auto">
 		<p>A new node can be created by filling the node form. Every newly created node will be part of the current realm.
 		<ul>
-			<li><b>node hostname</b> is a mandatory field, it is the hostname of the node or any alias.</li>
-			<li><b>node ip</b> is a mandatory field, it is the ip of the node.</li>
-			<li><b>node description</b> is an optional fields, it describes the nodes.</li>
-			<li><b>scan by node ip</b> it describes what parameter BLAST will use to access the node. If selected then BLAST will use the node ip else BLAST will use the node hostname.</li>
+			<li class="documentationList"><b>node hostname</b> is a mandatory field, it is the hostname of the node or any alias.</li>
+			<li class="documentationList"><b>node ip</b> is a mandatory field, it is the ip of the node.</li>
+			<li class="documentationList"><b>node description</b> is an optional fields, it describes the node object shortly.</li>
+			<li class="documentationList"><b>scan by node ip</b> is mandatory selector, the default value is false. It describes what parameter BLAST will use to access the node. If selected then BLAST will use the node ip else BLAST will use the node hostname.</li>
 		</ul>
 		</p>
 	
 		<h3 class="documentationChapterTitle">Node list</h3>
-		<img class="documentImage" src="/pictures/documentation/node/node_list.PNG" height="128px" width="auto">
-		<p>All nodes are visibile as card in the list section. Click on the node card to access to the node details section.</p>
+		<img class="documentImage" src="/pictures/documentation/node/node_list.PNG" height="256px" width="auto">
+		<p>All nodes of the current realm are visibile as card in the list section. Click on the node card to access to the node details section.</p>
 		
 		<h3 class="documentationChapterTitle">Node details</h3>
-		<img class="documentImage" src="/pictures/documentation/node/node_details.PNG" height="192px" width="auto">
+		<img class="documentImage" src="/pictures/documentation/node/node_details.PNG" height="256px" width="auto">
 		<p>Click on the node card of your choice to access his details. The node details contains three sections:
 		<ul>
-			<li><b>node details</b> shows the id, hostname, ip, description, mode, realms.</li>
-			<li><b>node mode</b> allows you to manage the cluster nodes.</li>
-			<li><b>node peers</b> lists the nodes linked.</li>
+			<li class="documentationList"><b>node details</b> shows the id, hostname, ip, description, mode, realms.</li>
+			<li class="documentationList"><b>node mode</b> allows you to manage the cluster nodes.</li>
+			<li class="documentationList"><b>node peers</b> lists the nodes linked.</li>
 		</ul>The picture above is an exemple of a cluster details section.</p>	
 	
 	
 		<h3 class="documentationChapterTitle">Delete a node</h3>
-		<p></p>
+		<img class="documentImage" src="/pictures/documentation/node/node_delete.PNG" height="128px" width="auto">
+		<p>Click on the node card of your choice to access his details. The node details contains the delete button to be used to delete the selected node. A node can be deleted if the node is not anymore linked to any cluster and if the node is not part of a registered scenario else the node deletion will be rejected.</p>
 	
 		<h3 class="documentationChapterTitle">Rescan a node</h3>
-		<p></p>
+		<img class="documentImage" src="/pictures/documentation/node/node_rescan.PNG" height="128px" width="auto">
+		<p>Click on the node card of your choice to acces his details. The node details contains the rescan button to be used to rescan the node. For a rescan to be successfull, the ssh connection details and the reference to the node must be persistent with what it was at the first scan, or it must be updated accordingly to any possible update made since the previous successfull scan.</p>
 		
 		<h3 class="documentationChapterTitle">node mode</h3>
-		<p></p>
+		<p>The node mode define the mode of the node. there are two possible mode:
+			<ul>
+				<li class="documentationList"><b>running</b> is the default mode, if this mode is selected then the node will be kept by any running scenario.</li>
+				<li class="documentationList"><b>maintenance</b> is the mode to select if the node will be skipped by any running scenario.</li>
+			</ul>
+		</p>
+		<img class="documentImage" src="/pictures/documentation/node/node_mode.PNG" height="392px" width="auto">
+		<p>Click on the node card of your choice to acces his details. The node details contains the node mode currently assigned to the selected node. The node mode switcher section is also accessible if a node mode switch is needed. Select the node mode to be assigned then click on the switch button.</p>
 	
 		<h3 class="documentationChapterTitle">node peers</h3>
+		<img class="documentImage" src="/pictures/documentation/node/node_peers.PNG" height="156px" width="auto">
 		<p></p>
-	
-		<h3 class="documentationChapterTitle">Node management</h3>
-		<img class="documentImage" src="/pictures/documentation/cluster/cluster_node_management.PNG" height="72px" width="auto">
-		<p></p>
-
-	
-	
+		
 	</div>
 </body>
 </html>

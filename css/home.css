@@ -2,9 +2,9 @@
 
 .mainAdviseContainer {
 	display: inline-flex;
-	width: 100%;
+	width: 75%;
 	margin-top: 5%;
-	margin-left: 12%;
+	margin-left: 20%;
 }
 
 .mainAdviseList {
@@ -19,7 +19,7 @@
 	background-color: #0095D3;
 	font-size: 26px;
 	padding: 10px;
-	border: 2px solid whitesmoke;
+	border: thin solid #D9D9D9;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	text-align: center;
@@ -29,9 +29,9 @@
 	font-size: 16px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
-	border-right: 2px solid whitesmoke;
-	border-left: 2px solid whitesmoke;
-	border-bottom: 2px solid whitesmoke;
+	border-right: thin solid #D9D9D9;
+	border-left: thin solid #D9D9D9;
+	border-bottom: thin solid #D9D9D9;
 	padding: 10px;
 	margin: 0;
 	text-align: center;
@@ -87,4 +87,40 @@
 	font-size: 18px; 
 	width: 25%; 
 }
-		
+
+.footerMainContainer {
+	margin-top: 5%; 
+	font-size: 12px; 
+	color: #616161;
+	border-top: thin solid #D9D9D9;
+	background-color: #F2F2F2;
+	padding-bottom: 0;
+	text-align: center;
+}
+
+.footerContainer {
+	display: inline-flex;
+}
+
+.footerListContainer {
+	padding: 15px;
+}
+
+.footerListElement {
+	padding: 10px;
+}
+
+.footerTitle {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.footerCopyright {
+	padding: 10px;
+	text-align: center;
+}
+
+.footerLink:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

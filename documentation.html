@@ -17,7 +17,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Untitled Document</title>
+	<title>BLAST Documentation</title>
 	<link rel="stylesheet" href="/css/common.css" type="text/css">
 	<link rel="stylesheet" href="/css/documentation.css" type="text/css">
 </head>
@@ -28,9 +28,6 @@
 			<ul class="menuListContainer">
 				<li>
 					<a class="menuListImage" href="/home.html"><img src="/pictures/blast.jpg" height="56px" width="56px"/></a>
-				</li>
-				<li class="menuList">
-					<a class="menuListElement" href="/contact.html">Contact</a>
 				</li>
 				<li class="menuList">
 					<a class="menuListElement" href="/documentation.html">Documentation</a>
@@ -51,15 +48,29 @@
 				<select id="version_selector">
 					<option selected>1.1.1</option>
 				</select>
-				<ul class="documentationMenuList">
-					<li id="documentationChapter" class="documentationMenuChapter" onclick="display_doc_content('cluster') ;">Cluster</li>
-					<li class="documentationMenuChapter" onclick="display_doc_content('install') ;">Install</li>
-					<li class="documentationMenuChapter" onclick="display_doc_content('infrastructure') ;">Infrastructure</li>
-					<li class="documentationMenuChapter" onclick="display_doc_content('node') ;">Node</li>
-					<li class="documentationMenuChapter" onclick="display_doc_content('scenario') ;">Scenario</li>
-					<li class="documentationMenuChapter" onclick="display_doc_content('scheduler') ;">Scheduler</li>
-					<li class="documentationMenuChapter" onclick="display_doc_content('script') ;">Script</li>
-					<li class="documentationMenuChapter" onClick="display_doc_content('settings') ;">Settings</li>
+				<ul style="padding-left: 10px;">
+					<li class="documentationMenuChapterTitle">User Interface</li>
+					<li>
+						<ul class="documentationMenuList">
+							<li id="documentationChapter" class="documentationMenuChapter" onclick="display_doc_content('cluster') ;">Cluster</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('infrastructure') ;">Infrastructure</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('node') ;">Node</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('profile') ;">Profile</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('realm') ;">Realm</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('request') ;">Request</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('scenario') ;">Scenario</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('scheduler') ;">Scheduler</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('script') ;">Script</li>
+							<li class="documentationMenuChapter" onClick="display_doc_content('settings') ;">Settings</li>
+						</ul>
+					</li>
+					<li class="documentationMenuChapterTitle">System</li>
+					<li>
+						<ul class="documentationMenuList">
+							<li class="documentationMenuChapter" onclick="display_doc_content('install') ;">Install</li>
+							<li class="documentationMenuChapter" onclick="display_doc_content('config') ;">Config</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -75,7 +86,7 @@
 		element.setAttribute("src", link)
 	}
 	
-	display_doc_content('install')
+	display_doc_content('infrastructure')
 	
 	function alertsize(pixels){
     	pixels+=100;

@@ -1,10 +1,56 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<meta charset="utf-8">
+	<title>The BLAST Guide chapter Scheduler</title>
+	<link rel="stylesheet" href="/css/common.css" type="text/css">
+	<link rel="stylesheet" href="/css/documentation.css" type="text/css">
 </head>
 
-<body>
+<body onload="parent.alertsize(document.body.scrollHeight);">
+	<div class="mainContainer documentationChapterMainContainer">
+		
+		<h1 class="documentationChapterTitle mainTitle">SCHEDULER</h1>
+		<img src="/pictures/documentation/scheduler/scheduler_button.PNG">
+		<p>The scheduler is a Blast object.</p>
+		
+		<h3 class="documentationChapterTitle">Scheduler_menu</h3>
+		<img src="/pictures/documentation/scheduler/scheduler_menu.PNG">
+		<p></p>
+	
+		<h3 class="documentationChapterTitle">Scheduler form</h3>
+		<img class="documentImage" src="/pictures/documentation/scheduler/scheduler_form.PNG" height="256px" width="auto">
+		<p>A new scheduler can be created by filling the scheduler form.
+		<ul>
+			<li class="documentationList"><b>scheduler name</b> is a mandatory field, it names the scheduler object.</li>
+			<li class="documentationList"><b>scheduler description</b> is an optional field, it describes the scheduler object shortly.</li>
+			<li class="documentationList"><b>scheduler days</b> is a mandatory , it defines which days of the week the scheduler must run.</li>
+			<li class="documentationList"><b>scheduler execution time</b> is an optional value, it defines at what time the scheduler must run.</li>
+			<li class="documentationList"><b>scheduler execution interval (min)</b>	is an optional value, it defines the interval in minutes between every scheduler execution.</li>
+			<li class="documentationList"><b>scheduler execution interval (sec)</b> is an optinal value, it defines the interval in secondes between every scheduler execution.</li>
+			<li class="documentationList"><b>scheduler parallel mode</b> is an optional selector, the default value is false. when a scheduler has more than one scenario then it defines if the scenarios must be execute in parallel.</li>
+			<li class="documentationList"><b>scheduler scenario</b> is mandatory, it defines one or more scenarios to be run by the scheduler.</li>
+		</ul>
+		</p>
+	
+		<h3 class="documentationChapterTitle">Scheduler management</h3>
+		<img class="documentImage" src="/pictures/documentation/scheduler/scheduler_management.PNG" height="332px" width="auto">
+		<p></p>
+		
+		<h3 class="documentationChapterTitle">Scheduler report</h3>
+		<img class="documentImage" src="/pictures/documentation/scheduler/scheduler_report.PNG" height="192px" width="auto">
+		<p></p>
+		
+		
+		<h3 class="documentationChapterTitle">Delete a cluster</h3>
+		<p></p>
+		
+		<h3 class="documentationChapterTitle">Cluster nodes management</h3>
+		<img class="documentImage" src="/pictures/documentation/cluster/cluster_node_management.PNG" height="72px" width="auto">
+		<p></p>
+
+		
+		
+	</div>
 </body>
 </html>
