@@ -16,8 +16,12 @@
 -->
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>BLAST Documentation</title>
+	<meta name="author" content="www.blast.eu.com">
+	<meta name="description" content="The blast software documentation">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="pictures/favicon.ico">
 	<link rel="stylesheet" href="/css/common.css" type="text/css">
 	<link rel="stylesheet" href="/css/documentation.css" type="text/css">
 </head>
@@ -32,9 +36,9 @@
 				<li class="menuList">
 					<a class="menuListElement" href="/documentation.html">Documentation</a>
 				</li>
-				<li class="menuList">
+				<!-- <li class="menuList">
 					<a class="menuListElement" href="/product.html">Product</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 		
@@ -64,13 +68,13 @@
 							<li class="documentationMenuChapter" onClick="display_doc_content('settings') ;">Settings</li>
 						</ul>
 					</li>
-					<li class="documentationMenuChapterTitle">System</li>
+					<!-- <li class="documentationMenuChapterTitle">System</li>
 					<li>
 						<ul class="documentationMenuList">
 							<li class="documentationMenuChapter" onclick="display_doc_content('install') ;">Install</li>
 							<li class="documentationMenuChapter" onclick="display_doc_content('config') ;">Config</li>
 						</ul>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -90,7 +94,6 @@
 	
 	function alertsize(pixels){
     	pixels+=100;
-		console.log(pixels)
     	document.getElementById("documentation-display-container").style.height=pixels+"px";
 	}
 	
